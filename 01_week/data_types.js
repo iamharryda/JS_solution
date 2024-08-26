@@ -12,14 +12,15 @@
 let age = 23;
 let name = "sayeed";
 let isStudent = true;
-let hobbies = ["football", "gaming", "walking"]; 
-let info = {isStudent : "Business college",
-            grade : 12
-    };
+let hobbies = ["football", "gaming", "walking"];
+let info = {
+    schoolName: "Business college",
+    grade: 12
+};
 
 console.log("age :", age + " type is :", typeof age);
 console.log("name :", name + " type is :", typeof name);
-console.log("isStudent is :", isStudent + "type is :", typeof isStudent );
+console.log("isStudent is :", isStudent + "type is :", typeof isStudent);
 console.log("hobbies is :", hobbies + " type is :", typeof hobbies);
 console.log("info :", info + "type is : ", typeof info);
 console.log("info: ", info);

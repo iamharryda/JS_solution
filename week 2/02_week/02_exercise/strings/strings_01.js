@@ -5,7 +5,8 @@ Refine the function getCharCount so that it returns the count of characters pres
 function getCharCount(str) {
   return str.length;
 }
-
+/* this is solve for me
+ */
 // Sample usage - do not modify
 console.log(getCharCount('Sam')); // 3
 console.log(getCharCount('Alex 123')); // 8

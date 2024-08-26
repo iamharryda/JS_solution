@@ -9,3 +9,4 @@
 - Use console.log() to print 'roundedNum1', 'roundedNum2', 'sqrtNum1', and 'maxNum' to the console.
 - Use the typeof operator to check the data type of each new variable and print the result using console.log().
 */
+

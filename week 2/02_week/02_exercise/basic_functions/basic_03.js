@@ -1,5 +1,5 @@
 // Write a function named greetUser that takes a user's name as a parameter and returns a greeting message.
-function greetUser(name){
+function greetUser(name) {
     return "Hello, " + name;
 }
 
