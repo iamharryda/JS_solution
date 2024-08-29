@@ -5,7 +5,7 @@ function getAverage() {
     let sum = 0;
     let i = 0;
     while (true) {
-        let num = +prompt("give me a single digit number: ");
+        let num = +prompt("give me a number: ");
         sum += num;
         i++;
         let opinion = prompt("Do you want to continue giving numbers? (y/n): ");
