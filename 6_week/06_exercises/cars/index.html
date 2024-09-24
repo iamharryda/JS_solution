@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="form-container">
+            <h2>Place your car information :)</h2>
+            <form id="car-form">
+                <label for="licensePlate">License Plate:</label>
+                <input type="text" id="licensePlate" name="licensePlate"><br><br>
+                <label for="maker">Maker:</label>
+                <input type="text" id="maker" name="maker"><br><br>
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model"><br><br>
+                <label for="currentOwner">Current Owner:</label>
+                <input type="text" id="currentOwner" name="currentOwner"><br><br>
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price"><br><br>
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color"><br><br>
+                <button id="button" class="button-81">Submit</button>
+              </form>
+        </div>
+
+        <div class="table-container">
+            <table id="car-table">
+                <tr>
+                    <th>Car no</th>
+                    <th>license Plate</th>
+                    <th>Maker</th>
+                    <th>Model</th>
+                    <th>current Owner</th>
+                    <th>Price</th>
+                    <th>Color</th>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <div class="search-container">
+        <div class="doing-search">
+        <h1>Car database</h1>
+        <input type="text" name="" id="search-box" placeholder="Search your car here">
+        <button id="search-button" class="button-81">Search</button>
+        </div>
+        <div class="search-result">
+            <h2>here is your searched CAR :)</h2>
+            <div id="result"></div>
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
