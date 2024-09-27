@@ -12,8 +12,8 @@ The simplest way to create an object is by using object literals. This allows yo
 
 ```js
 const person = {
-  firstName: 'Jane',
-  lastName: 'Doe',
+  firstName: "Jane",
+  lastName: "Doe",
   age: 30,
 };
 ```
@@ -28,8 +28,10 @@ function Person(firstName, lastName, age) {
   this.lastName = lastName;
   this.age = age;
 }
-const person1 = new Person('Alice', 'Johnson', 30);
+const person1 = new Person("Alice", "Johnson", 30);
 ```
+
+new file
 
 ### ES6 Class Syntax
 
@@ -43,7 +45,7 @@ class Person {
     this.age = age;
   }
 }
-const person2 = new Person('Bob', 'Smith', 28);
+const person2 = new Person("Bob", "Smith", 28);
 ```
 
 ## Accessing and modifying properties
@@ -64,29 +66,29 @@ person.age = 31; // Modifies age to 31
 Bracket notation allows you to use variables or property names with spaces or special characters.
 
 ```javascript
-const property = 'firstName';
+const property = "firstName";
 console.log(person[property]); // Accesses 'Jane'
 
-person['age'] = 32; // Modifies age to 32
-console.log(person['age']); // Outputs: 32
-
+person["age"] = 32; // Modifies age to 32
+console.log(person["age"]); // Outputs: 32
 ```
 
 ## Adding new properties
+
 You can add new properties to an object dynamically using both notations.
 
 ```javascript
-person.email = 'jane.doe@example.com';
+person.email = "jane.doe@example.com";
 console.log(person.email); // Outputs: jane.doe@example.com
-
 ```
 
 ```javascript
-person['phoneNumber'] = '123-456-7890';
-console.log(person['phoneNumber']); // Outputs: 123-456-7890
+person["phoneNumber"] = "123-456-7890";
+console.log(person["phoneNumber"]); // Outputs: 123-456-7890
 ```
 
 ## Removing properties
+
 The `delete` operator removes properties from an object.
 
 ```javascript
@@ -100,7 +102,7 @@ A method is a function stored as a property in an object. Methods can access oth
 
 ```javascript
 const person = {
-  firstName: 'Jane',
+  firstName: "Jane",
   greet: function () {
     console.log(`Hello, my name is ${this.firstName}.`);
   },
@@ -108,18 +110,18 @@ const person = {
 
 person.greet(); // Outputs: Hello, my name is Jane.
 ```
+
 In ES6, you can define methods using shorthand syntax.
 
 ```javascript
 const person = {
-  firstName: 'Jane',
+  firstName: "Jane",
   greet() {
     console.log(`Hello, my name is ${this.firstName}.`);
   },
 };
 
 person.greet(); // Outputs: Hello, my name is Jane.
-
 ```
 
 ## Prototypes and Inheritance
@@ -131,9 +133,8 @@ Person.prototype.greet = function () {
   console.log(`Hello, my name is ${this.firstName} ${this.lastName}.`);
 };
 
-const person1 = new Person('Alice', 'Johnson', 30);
+const person1 = new Person("Alice", "Johnson", 30);
 person1.greet(); // Outputs: Hello, my name is Alice Johnson.
-
 ```
 
 ## The `this` Keyword
@@ -142,16 +143,14 @@ The `this` keyword refers to the object the function belongs to. It is used to a
 
 ```js
 const person = {
-  firstName: 'Jane',
+  firstName: "Jane",
   greet() {
     console.log(this); // Refers to the person object
   },
 };
 
 person.greet();
-
 ```
-
 
 ## JSON and object conversion
 
@@ -161,11 +160,10 @@ JavaScript objects can be converted to JSON format and back, which is common whe
 const jsonString = JSON.stringify(person);
 console.log(jsonString); // Outputs: {"firstName":"Jane","lastName":"Doe","age":30}
 
-
 const jsonObject = JSON.parse(jsonString);
 console.log(jsonObject); // Outputs: { firstName: 'Jane', lastName: 'Doe', age: 30 }
-
 ```
+
 ## Summary
 
 - Dot Notation is the simplest way to access and modify object properties when you know the property name.
