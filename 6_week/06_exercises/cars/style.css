@@ -1,33 +1,105 @@
 body{
-    background-color: rgb(197, 211, 221);
+    background-color: #66635B;
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 .container{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(202, 232, 232);
-    height: 50vh;
-    width: 90vw;
+
+    background-color: #93A8AC;
+    height: auto;
+    width: 60vw;
     border-radius: 20px;
-    margin:30px
+    margin: 2rem 0;
+}
+
+.form-container{
+    width: 50%;
+    margin: 2rem;
 }
 
 .search-container{
-    height: 50vh;
-    width: 90vw;
-    background-color: rgb(202, 232, 232);
+    background-color: #93A8AC;
+    height: auto;
+    width: 60vw;
     border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
+}
+
+.doing-search{
+    margin: 2rem;
+}
+
+.doing-search input{
+    margin-right: 1rem;
+}
+
+.search-result{
+    margin: 2rem;
+    display: none;
+}
+
+.table-container{
+    margin: 2rem;
+    display: none;
 }
 
 #search-box{
     width: 200px;
     height: 30px;
 }
+
+.button1{
+    background-color: #66635B;
+    color: aliceblue;
+    width: 5rem;
+    height: 2rem;
+    font-size: 13px;
+
+    &:hover{
+        background-color:#D7CEB2;
+        color: black
+    }
+}
+
+
+
+table{
+    border-collapse: collapse;
+}
+
+th{
+    
+    padding: 1vmin 2vmin;
+    background-color: #A59E8C;
+    color: rgb(50, 45, 45);
+    border: 2px solid rgb(54, 53, 53);
+}
+
+td{
+    padding: 1vmin 2vmin;
+    background-color: #D7CEB2;
+    color: rgb(50, 45, 45);
+    border: 2px solid rgb(54, 53, 53);
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.box label{
+    width: 40%
+}
+
+.box input{
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 0;
+}
+
+
 
 
 
